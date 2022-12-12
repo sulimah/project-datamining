@@ -36,7 +36,7 @@ y = df_train['output']
 # View Data
 if(selected == "Import Data"):
   st.write("# Deskripsi")
-  st.write("Data yang digunakan adalah data breast cancer :")
+  st.write("Data yang digunakan adalah dataset Heart Attack Prediction:")
   st.write("https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset")
   
   st.markdown("---")
@@ -156,7 +156,7 @@ elif(selected == 'Implementation'):
   heart_rate = st.number_input("Masukkan Detak Jantung Maximal", min_value=71, max_value=202)
   oldpeak = st.number_input("Masukkan Oldpeak", min_value=0.0, max_value=6.2)
 
-  cek_knn = st.button('Cek Pasien')
+  cek_knn = st.button('Cek Prediksi')
   inputan = [[age, gender, chest_pain, blood_pressure, cholestoral, heart_rate, oldpeak]]
   
   scaler = joblib.load('model/df_scaled.sav')
