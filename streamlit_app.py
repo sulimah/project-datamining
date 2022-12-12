@@ -136,7 +136,7 @@ elif(selected == 'Modeling'):
     akurasi = accuracy_score(y_test,y_pred)
     
     st.success("Dengan menggunakan metode Decission tree didapatkan hasil akurasi sebesar:")
-    st.succes(f'Akurasi = {akurasi*100}%')
+    st.success(f'Akurasi = {akurasi*100}%')
     # st.write(df_train_pre)
 
     # st.success("Dengan menggunakan metode Decission tree didapatkan hasil akurasi sebesar:")
