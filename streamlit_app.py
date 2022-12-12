@@ -24,7 +24,7 @@ st.write("Oleh : Sulimah | 200411100054")
 # with st.sidebar:
 selected = option_menu(
   menu_title  = None,
-  options     = ["Import Data","Preprocessing","Modelling","Implementation"],
+  options     = ["Import Data","Preprocessing","Modeling","Implementation"],
   icons       = ["data","process","model","implemen"],
   orientation = "horizontal",
 )
@@ -40,7 +40,7 @@ if(selected == "Import Data"):
   st.write("https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset")
   
   st.markdown("---")
-  st.write("# Menampilkan Dataset")
+  st.write("# Import Data")
   st.dataframe(df_train)
 
 
@@ -63,7 +63,7 @@ elif(selected == 'Preprocessing'):
   joblib.dump(scaler,'model/df_scaled.sav')
 
 
-# Modelling
+# Modeling
 elif(selected == 'Modeling'):
   st.write("# Modeling")
   # knn, nb, dtc = st.tabs(['K-NN', 'Naive-Bayes', 'Decission Tree'])
